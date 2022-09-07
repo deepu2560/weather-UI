@@ -1,3 +1,101 @@
 .App {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 550px;
+  width: 95%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* making div center to screen */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 10px;
+
+  /* aligning child groups side by side and aligning center */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather {
+  height: 100%;
+  width: 75%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* setting border radius to 10px */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.more-details {
+  height: 100%;
+  width: 25%;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+
+  /* setting border radius to 10px */
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.more-details > div {
+  width: 80%;
+  margin: auto;
+}
+
+.current-weather {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#temperature {
+  font-size: 500%;
+  margin: 0;
+  font-weight: bolder;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#temperature > span {
+  font-size: large;
+}
+
+.bi-cloud-haze2 {
+  width: 100px;
+  margin: 0;
+}
+
+#breezy {
+  font-size: medium;
+  font-style: italic;
+  margin: 0;
+}
+
+.forcast {
+  width: 100%;
   text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  overflow: hidden;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.forcast > div {
+  width: 10%;
 }
